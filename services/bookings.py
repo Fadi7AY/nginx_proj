@@ -41,7 +41,7 @@ def booking_record(username: str) -> Dict[str, List[str]]:
         raise NotFound(description=f"No bookings found for user {username}")
     return bookings[username]
 
-@app.route("/bookings", methods=['GET'])
+@app.route("/bookings/", methods=['GET'])
 def booking_list() -> Dict[str, Dict[str, List[str]]]:
     """Get all bookings"""
     return bookings

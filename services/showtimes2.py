@@ -48,7 +48,7 @@ def showtimes_list() -> Dict[str, List[str]]:
 
 def main() -> None:
     """Main entry point for the application"""
-    app.run(host="0.0.0.0", port=5002, debug=True)
+    app.run(host="0.0.0.0", port=5006, debug=True)
 
 if __name__ == "__main__":
     main()

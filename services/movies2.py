@@ -48,15 +48,16 @@ def movie_info(movieid: str) -> Dict[str, Any]:
 @app.route("/movies/", methods=['GET'])
 def movie_record() -> Dict[str, Any]:
     """Get all movies"""
-   # return f"Request received at {request.host}"
+#    return f"Request received at {request.host}"
     return movies
 
 def main() -> None:
     """Main entry point for the application"""
 #    port = int(sys.argv[1]) if len(sys.argv) > 1 else 5001
-    app.run(host="0.0.0.0", port=5001, debug=True)
-    print(f" Movies service running on port {port}")
+    app.run(host="0.0.0.0", port=5005, debug=True)
 #    app.run(host="0.0.0.0", port=port, debug=True)
+    print(f" Movies service running on port {port}")
+
 if __name__ == "__main__":
     main()
 
