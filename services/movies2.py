@@ -48,7 +48,7 @@ def movie_info(movieid: str) -> Dict[str, Any]:
 @app.route("/movies/", methods=['GET'])
 def movie_record() -> Dict[str, Any]:
     """Get all movies"""
-#    return f"Request received at {request.host}"
+    print(f" Request received on {request.host}")
     return movies
 
 def main() -> None:

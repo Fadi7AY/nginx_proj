@@ -64,7 +64,7 @@ def hello() -> Dict[str, Any]:
     }
 
 
-@app.route("/users", methods=['GET'])
+@app.route("/users/", methods=['GET']) #added a slash
 def users_list() -> Dict[str, Dict[str, Any]]:
     """Get all users"""
     return users
