@@ -7,6 +7,18 @@ A modern Python microservices example project for a movie theater system. The ba
 * **Booking Service** (port 5003): Booking information
 * **Users Service** (port 5000): User information and movie suggestions
 
+## At a glance
+
+```mermaid
+flowchart LR
+    Browser["Browser"] --> UI["UI · port 5004"]
+    UI --> Movies["Movies · 5001"]
+    UI --> Shows["Showtimes · 5002"]
+    UI --> Bookings["Bookings · 5003"]
+    UI --> Users["Users · 5000"]
+```
+
+
 ## Architecture Diagram
 ![Architecture Diagram](diagram.png)
 
@@ -20,8 +32,8 @@ A modern Python microservices example project for a movie theater system. The ba
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd microservices
+git clone https://github.com/Fadi7AY/nginx_proj.git
+cd nginx_proj
 ```
 
 2. Install dependencies:
